@@ -87,19 +87,20 @@ class ATM
 		int pin = 6819;
 		int id = 101;
 		int i = 0;
+                int id1, pin1;
 		Scanner sc = new Scanner(System.in);
 		OperationATM obj1 = new OperationATM();
 		do
 		{
 		 	System.out.println("Enter ID:");
-			id = sc.nextInt();
+			id1 = sc.nextInt();
 			System.out.println("Enter PIN : ");
-			pin = sc.nextInt();
-			if(id != 101 || pin != 6819)
+			pin1 = sc.nextInt();
+			if(id1 != id || pin1 != pin)
 			{
 				System.out.println(" ! ENTER VALID CREDENTIALS...");
 			}
-		}while(id != 101 && pin != 6819);
+		}while(id1 != id || pin1 != pin);
 		do
 		{
 			System.out.println("\n********** ATM INTERFACE **********\n");
